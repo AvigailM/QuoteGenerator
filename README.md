@@ -9,5 +9,5 @@ quotes - https://talaikis.com/random_quotes_api
 
 image - https://dog.ceo/api/breeds/image/random
 
-
-https://ym3mpo0oyz.codesandbox.io
+Check the site :
+https://7312wo932j.codesandbox.io/
