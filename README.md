@@ -1,2 +1,0 @@
-# QuoteGenerator
-Created with CodeSandbox
