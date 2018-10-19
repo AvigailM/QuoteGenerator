@@ -10,4 +10,4 @@ quotes - https://talaikis.com/random_quotes_api
 image - https://dog.ceo/api/breeds/image/random
 
 Check the site :
-https://7312wo932j.codesandbox.io/
+https://6wwo641zkz.codesandbox.io/
