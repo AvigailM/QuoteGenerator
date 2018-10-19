@@ -52,7 +52,7 @@ class Quotes extends React.Component {
     return (
       <div className="quotes">
         <h1> "{quote}"</h1>
-        <h1>by: {author}</h1>
+        <h1 className="author">by: {author}</h1>
       </div>
     );
   }
