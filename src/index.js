@@ -11,6 +11,7 @@ function App() {
       <h1>Quote Generator</h1>
       <Card>
         <Quotes />
+        <br/>
         <Image />
       </Card>
     </div>

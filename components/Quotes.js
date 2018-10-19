@@ -17,7 +17,10 @@ class Quotes extends React.Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
+    this.getRandomQuote();
+  }
 
+  getRandomQuote = () => {
     axios
       .get(API)
       .then(result =>
@@ -33,7 +36,7 @@ class Quotes extends React.Component {
           isLoading: true
         })
       );
-  }
+  };
 
   render() {
     const { quote, author, isLoading, error } = this.state;
@@ -49,7 +52,7 @@ class Quotes extends React.Component {
     return (
       <div className="quotes">
         <h1> "{quote}"</h1>
-        <h1> {author}</h1>
+        <h1>by: {author}</h1>
       </div>
     );
   }
