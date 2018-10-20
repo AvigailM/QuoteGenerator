@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 
 const API = "https://safe-garden-90262.herokuapp.com/api/quote";
-//https://quotes.stormconsultancy.co.uk/random.json";
+//"https://quotes.stormconsultancy.co.uk/random.json";
 //"https://talaikis.com/api/quotes/random";
 
 class Quotes extends React.Component {

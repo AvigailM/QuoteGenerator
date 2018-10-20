@@ -7,7 +7,7 @@ used APIs:
 
 quotes - https://talaikis.com/random_quotes_api
 
-image - https://dog.ceo/api/breeds/image/random
+image - https://source.unsplash.com/random/1600x900
 
 Check the site :
-https://6wwo641zkz.codesandbox.io/
+https://4098756jxx.codesandbox.io/
