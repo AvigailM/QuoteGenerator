@@ -11,8 +11,8 @@ function App() {
       <h1>Quote Generator</h1>
       <Card>
         <Quotes />
-        <br/>
-        <Image />
+        <br />
+        <Image srcUrl="https://source.unsplash.com/random/1600x900" />
       </Card>
     </div>
   );

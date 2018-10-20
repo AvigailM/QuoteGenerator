@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { CardImg } from "reactstrap";
 
-
 function Image(props) {
   return (
     <div>
@@ -13,7 +12,7 @@ function Image(props) {
         onError={() => {
           console.log("error");
         }}
-        src="https://source.unsplash.com/random/1600x900"
+        src={props.srcUrl}
         alt="Card image cap"
       />
     </div>
