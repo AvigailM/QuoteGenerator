@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 
-const API = "https://talaikis.com/api/quotes/random";
+const API = "https://safe-garden-90262.herokuapp.com/api/quote";
+//"https://quotes.stormconsultancy.co.uk/random.json";
+//"https://talaikis.com/api/quotes/random";
 
 class Quotes extends React.Component {
   state = {
@@ -29,14 +31,14 @@ class Quotes extends React.Component {
         cancelToken: this.signal.token
       });
       this.setState({
-        quote: response.data.quote,
-        author: response.data.author,
+        quote: response.data.quoteText,
+        author: response.data.quoteAuthor,
         isLoading: false
       });
     } catch (err) {
       if (axios.isCancel(err)) {
         this.setState({
-          err,
+          error: err,
           isLoading: true
         });
         console.log("Error: ", err.message); // => prints: Api is being canceled
