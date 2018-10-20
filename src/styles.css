@@ -8,6 +8,7 @@
 }
 
 .quotes {
+  padding: 5px;
   border: 2px solid #dddddd;
   box-shadow: 0 5px 3px #eeeeee;
   width: 50%;
