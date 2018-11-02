@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import CustomButton from "/components/CustomButton";
 
 const API = "https://safe-garden-90262.herokuapp.com/api/quote";
 //"https://quotes.stormconsultancy.co.uk/random.json";
@@ -36,9 +37,9 @@ class Quotes extends React.Component {
         isLoading: false
       });
     } catch (err) {
+      this.setState({ error: err.message });
       if (axios.isCancel(err)) {
         this.setState({
-          error: err,
           isLoading: true
         });
         console.log("Error: ", err.message); // => prints: Api is being canceled
@@ -53,18 +54,21 @@ class Quotes extends React.Component {
 
     if (error) {
       return <p>{error.message}</p>;
-    }
-
-    if (isLoading) {
+    } else if (isLoading) {
       return <p>Loading ...</p>;
-    }
+    } else {
+      return (
+        <div className="quotes">
+          <h1> "{quote}"</h1>
 
-    return (
-      <div className="quotes">
-        <h1> "{quote}"</h1>
-        <h1 className="author">by: {author}</h1>
-      </div>
-    );
+          <h1 className="author">by: {author}</h1>
+
+          <div className="button">
+            <CustomButton onNewLoad={this.onLoadQuote}>New Quote</CustomButton>
+          </div>
+        </div>
+      );
+    }
   }
 }
 
